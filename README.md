@@ -3,7 +3,9 @@ The purpose of this is to allow you to quickly get started with test driven deve
 
 This uses [tox](https://tox.readthedocs.io/en/latest/) to set up a full testing pipeline for the code that is installed via `setup.py` which in this case is the package you can put in the `app/` folder.
 
-After you have installed `tox` as per the installation steps below it's as simple as running `tox` from the command line to get the following testing pipeline run:
+After you have installed `tox` as per the installation steps below you just have to write your tests in `tests/` and your code in `app/` then run the `tox` command.
+
+Doing this will get you the following testing pipeline run:
 
 - pylint
 - mypy
