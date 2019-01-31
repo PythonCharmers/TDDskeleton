@@ -38,3 +38,20 @@ To run the test suite just issue the command `tox` and it will then run the test
 Because this is structured in such a way that it installs your code as a package via `setup.py`, you will need to set up any package dependencies your code has in `setup.py`.
 
 Go to `setup.py` and add any packages you depend on into the list for `install_requires`.
+
+## How to setup test-driven development for your own project:
+
+1. Clone https://github.com/PythonCharmers/TDDskeleton
+2. Copy these files to your project folder:
+    - setup.py (and modify it)
+    - tox.ini
+3. Add `tox` to your project's `requirements.txt` file.
+4. pip install -r `requirements.txt`
+5. Change every reference to `app` in `setup.py` and `tox.ini` to your package name.
+6. Update `tox.ini` to refer to the location of your `requirements.txt` if renamed or somewhere else.
+7. Ensure you have a `tests` folder with at least one `test_....py` file.
+
+Now run
+```
+tox
+```
